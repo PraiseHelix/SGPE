@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Overlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{53d2bd4c-6bd8-4980-a588-ef5fc7d90d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core">
+      <UniqueIdentifier>{73ccec74-cc82-4929-9cb6-986a56a843d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\Managers">
+      <UniqueIdentifier>{ce74191b-3ab1-433f-a37f-02677dac5ded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\Handlers">
+      <UniqueIdentifier>{756d7b36-2cee-4cca-8094-3d75d78a93e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\Audio">
+      <UniqueIdentifier>{281cec0a-c4ed-46e3-ab9c-e02f1884dd55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\Utils">
+      <UniqueIdentifier>{3347a25b-6b3d-4c98-a059-77e3225698b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\System">
+      <UniqueIdentifier>{789a3c0f-04ef-4a34-94b4-b53cf852e242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5acc7cc6-b2e9-4e58-91ea-d60d2adb3a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\Managers\LevelManager">
+      <UniqueIdentifier>{7a3440a8-5a40-447b-92cf-2e09e502dfd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\GameObjects">
+      <UniqueIdentifier>{ce3efe50-5ec7-4ced-80c8-a11edb28a1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\GUI">
+      <UniqueIdentifier>{642c6c79-27aa-4cdc-8098-f324e3d55e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\GUI\Canvas">
+      <UniqueIdentifier>{7183fa69-0530-4f11-b594-d1fbdc0819fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\GUI\Canvas\Grid">
+      <UniqueIdentifier>{1d2ca65a-27ac-4bc0-a2e4-72ffe19b2d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Core\GUI\Canvas\Overlay">
+      <UniqueIdentifier>{b7e1a109-a6b1-43e6-bbea-b17a693ada55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameObject.hpp">
+      <Filter>Header\Core\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.hpp">
+      <Filter>Header\Core\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.hpp">
+      <Filter>Header\Core\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.hpp">
+      <Filter>Header\Core\GUI\Canvas\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.hpp">
+      <Filter>Header\Core\GUI\Canvas\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.hpp">
+      <Filter>Header\Core\Managers\LevelManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.hpp">
+      <Filter>Header\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.hpp">
+      <Filter>Header\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperWindow.hpp">
+      <Filter>Header\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SGPE.hpp" />
+    <ClInclude Include="GameObjectsDefault.hpp">
+      <Filter>Header\Core\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelManager.hpp">
+      <Filter>Header\Core\Managers\LevelManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSFML.hpp">
+      <Filter>Header\Core\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.hpp">
+      <Filter>Header\Core\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas.hpp">
+      <Filter>Header\Core\GUI\Canvas</Filter>
+    </ClInclude>
+    <ClInclude Include="Overlay.hpp">
+      <Filter>Header\Core\GUI\Canvas\Overlay</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -178,12 +178,7 @@
   <ItemGroup>
     <ClCompile Include="Audio.cpp" />
     <ClCompile Include="Graphics.cpp" />
-    <ClCompile Include="Grid.cpp" />
-    <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="NPC.cpp" />
-    <ClCompile Include="Overlay.cpp" />
-    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Audio.hpp" />
@@ -191,18 +186,12 @@
     <ClInclude Include="Core.hpp" />
     <ClInclude Include="GameObject.hpp" />
     <ClInclude Include="Graphics.hpp" />
-    <ClInclude Include="GraphicsOpenGL.hpp" />
-    <ClInclude Include="GraphicsSFML.hpp" />
-    <ClInclude Include="Grid.hpp" />
     <ClInclude Include="HelperWindow.hpp" />
-    <ClInclude Include="InputHandler.hpp" />
     <ClInclude Include="Level.hpp" />
     <ClInclude Include="LevelManager.hpp" />
-    <ClInclude Include="Overlay.hpp" />
     <ClInclude Include="GameObjectsDefault.hpp" />
     <ClInclude Include="Settings.hpp" />
     <ClInclude Include="SGPE.hpp" />
-    <ClInclude Include="Tile.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,5 @@
 #include "Grid.hpp"
 #include <iostream>
-#include "GameObjectsDefault.hpp"
 
 Grid::Grid()
 {

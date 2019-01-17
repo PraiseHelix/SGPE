@@ -55,10 +55,9 @@ public:
 class DrawableGameObject : public GameObject
 {
 private:
-	std::shared_ptr<Graphics> Canvas;
+	std::shared_ptr<Canvas> canvas;
 public:
-	DrawableGameObject() {};
-	virtual void addCanvas(std::shared_ptr<Graphics> graphics) = 0;
+	DrawableGameObject(std::shared_ptr<Canvas> canvas):canvas(canvas) {};
 	virtual void onUpdate() = 0;
 	virtual void onStart() = 0;
 	virtual void onCollision() = 0;

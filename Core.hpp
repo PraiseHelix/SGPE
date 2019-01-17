@@ -2,7 +2,6 @@
 #include "GameObject.hpp"
 #include "Grid.hpp"
 #include "Settings.hpp"
-#include "GameObjectsDefault.hpp"
 #include "LevelManager.hpp"
 #include "InputHandler.hpp"
 #include "Graphics.hpp"

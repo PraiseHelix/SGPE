@@ -16,12 +16,6 @@
     <Filter Include="Core">
       <UniqueIdentifier>{73ccec74-cc82-4929-9cb6-986a56a843d4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Core\Managers">
-      <UniqueIdentifier>{ce74191b-3ab1-433f-a37f-02677dac5ded}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Core\Managers\LevelManager">
-      <UniqueIdentifier>{7a3440a8-5a40-447b-92cf-2e09e502dfd0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Core\Audio">
       <UniqueIdentifier>{281cec0a-c4ed-46e3-ab9c-e02f1884dd55}</UniqueIdentifier>
     </Filter>
@@ -46,6 +40,9 @@
     <Filter Include="Core\GUI\Graphics">
       <UniqueIdentifier>{5894f50f-ebc2-4a7c-8383-2c1f1cc7cd81}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core\LevelManager">
+      <UniqueIdentifier>{7a3440a8-5a40-447b-92cf-2e09e502dfd0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameObject.hpp">
@@ -55,7 +52,7 @@
       <Filter>Core\Audio</Filter>
     </ClInclude>
     <ClInclude Include="Level.hpp">
-      <Filter>Core\Managers\LevelManager</Filter>
+      <Filter>Core\LevelManager</Filter>
     </ClInclude>
     <ClInclude Include="Core.hpp">
       <Filter>Core\System</Filter>
@@ -67,7 +64,7 @@
       <Filter>Core\Utils</Filter>
     </ClInclude>
     <ClInclude Include="LevelManager.hpp">
-      <Filter>Core\Managers\LevelManager</Filter>
+      <Filter>Core\LevelManager</Filter>
     </ClInclude>
     <ClInclude Include="Canvas.hpp">
       <Filter>Core\GUI\Canvas</Filter>

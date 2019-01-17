@@ -10,7 +10,7 @@ public:
 	virtual void onUpdate() = 0;
 	virtual void onStart() = 0;
 	virtual void onCollision() = 0;
-	virtual void Interact() = 0 ;
+	virtual void onInteract() = 0 ;
 	virtual void onCall() = 0;
 	~GameObject() {};
 };
@@ -57,6 +57,7 @@ class DrawableGameObject : public GameObject
 private:
 	std::shared_ptr<Canvas> canvas;
 public:
+	DrawableGameObject() {};
 	DrawableGameObject(std::shared_ptr<Canvas> canvas):canvas(canvas) {};
 	virtual void onUpdate() = 0;
 	virtual void onStart() = 0;

@@ -1,9 +1,7 @@
 #pragma once
 #include "GameObject.hpp"
-#include "Grid.hpp"
 #include "Settings.hpp"
 #include "LevelManager.hpp"
-#include "InputHandler.hpp"
 #include "Graphics.hpp"
 #include <SFML\Graphics.hpp>
 

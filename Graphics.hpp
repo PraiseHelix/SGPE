@@ -9,9 +9,11 @@
 
 
 class Graphics {
+private:
+	std::shared_ptr<Canvas> canvas;
 public:
 		
-	Graphics::Graphics() {};
+	Graphics::Graphics(std::shared_ptr<Canvas> canvas):canvas(canvas) {};
 
 	virtual void Render() = 0;
 	~Graphics() {};

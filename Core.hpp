@@ -19,10 +19,7 @@ public:
 	Core(LevelManager & levelManager) :levelManager(levelManager) {};
 
 	void Run() {
-		sf::Event event;
-		while (event.type != sf::Event::Closed) {
 			Update();
-		}
 	};
 	void Update() {
 		levelManager.Update();

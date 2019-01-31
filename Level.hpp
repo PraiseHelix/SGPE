@@ -8,14 +8,15 @@ class Level
 {
 private:
 	std::vector<GameObject*> gameObjects;
-	Graphics & graphics;
+	std::shared_ptr<Graphics> graphics;
 
 public:
-	Level(std::vector<GameObject*> gameObjects, Graphics & graphics):gameObjects(gameObjects),  graphics(graphics) {};
+	Level(std::vector<GameObject*> gameObjects, std::shared_ptr<Graphics> graphics):gameObjects(gameObjects),  graphics(graphics) {};
 	virtual void Update() = 0;
 	virtual void Start() = 0;
 
 	virtual void Render() = 0; 
+	virtual void Close()  = 0;
 	~Level() {};
 };
 

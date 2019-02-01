@@ -15,6 +15,11 @@ public:
 	~GameObject() {};
 };
 
+struct LevelOrder {
+	bool Next = false;
+	bool Previous = false;
+	bool ResetStart = false;
+};
 
 class StorageObject
 {
@@ -24,8 +29,31 @@ class StorageObject
 
 
 
-class DrawableGameObject : public GameObject
-{
+class LevelStorageObject
+: public StorageObject {
+private:
+	LevelOrder levelOrder;
+public:
+	LevelStorageObject() :levelOrder(LevelOrder()){}
+	virtual bool onUpdate() = 0;
+	virtual void onStart() = 0;
+	virtual void onCollision() = 0;
+	virtual void onInteract() = 0;
+	void setNext() {
+		levelOrder.Next = true;
+	}
+	void setPrevious() {
+		levelOrder.Previous = true;
+	}
+	void setResetStart() {
+		levelOrder.ResetStart = true;
+	}
+	LevelOrder onCall() {
+		return levelOrder;
+	};
+};
+class DrawableGameObject
+: public GameObject {
 private:
 	std::shared_ptr<Canvas> canvas;
 public:
@@ -36,11 +64,12 @@ public:
 	virtual void onCollision() = 0;
 	virtual void onInteract() = 0;
 	virtual void onCall() = 0;
+	virtual void onRender() = 0;
 	~DrawableGameObject() {};
 };
 
-class LogicGameObject : public GameObject
-{
+class LogicGameObject
+: public GameObject {
 private:
 public:
 	LogicGameObject() {};
